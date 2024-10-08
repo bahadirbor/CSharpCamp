@@ -66,7 +66,10 @@ namespace _02_Variables
             #endregion
 
             #region CharVariables
+            //char symbol = 'a';
+            //Console.WriteLine(symbol);
             
+            #endregion
 
         }
     }
