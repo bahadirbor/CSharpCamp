@@ -131,6 +131,33 @@ namespace _02_Variables
 
             #endregion
 
+            #region DoubleInputOperations
+            //double exam1, exam2, exam3, average;
+
+            //Console.Write("1. Sınav Sonucu: ");
+            //exam1 = double.Parse(Console.ReadLine());
+
+            //Console.Write("2. Sınav Sonucu: ");
+            //exam2 = double.Parse(Console.ReadLine());
+
+            //Console.Write("3. Sınav Sonucu: ");
+            //exam3 = double.Parse(Console.ReadLine());
+
+            //average = (exam1 + exam2 + exam3) / 3;
+
+            //Console.WriteLine("Sonuç: " + average);
+
+            #endregion
+
+            #region CharInputOperations
+            //char gender;
+
+            //Console.Write("Cinsiyet seçin: ");
+            //gender = char.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Seçtiğiniz cinsiyet: " + gender);
+            
+            #endregion
         }
     }
 }
