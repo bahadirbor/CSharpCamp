@@ -10,7 +10,7 @@ namespace _02_Variables
         static void Main(string[] args){
             //double number = 4.85;
 
-            #region doubleVariables
+            #region DoubleVariables
             //Console.WriteLine("***** Fiyat Listesi *****" + "\n");
 
             //double applePrice, orangePrice, strawberryPrice, potatoPrice, tomatoPrice;
@@ -68,7 +68,39 @@ namespace _02_Variables
             #region CharVariables
             //char symbol = 'a';
             //Console.WriteLine(symbol);
-            
+
+            #endregion
+
+            #region StringInputOperations
+            //Console.WriteLine("**** CSharp Hava Yolları Yolcu Bilgisi ****");
+
+            //string passengerName, passengerSurname, passengerDistrict, passengerAge,
+            //    passengerCity, passengerIdentityNumber;
+
+            //Console.Write("Yolcu Adı: ");
+            //passengerName = Console.ReadLine();
+
+            //Console.Write("Yolcu Soyadı: ");
+            //passengerSurname = Console.ReadLine();
+
+            //Console.Write("Yolcu İlçesi: ");
+            //passengerDistrict = Console.ReadLine();
+
+            //Console.Write("Yolcu İl: ");
+            //passengerCity = Console.ReadLine();
+
+            //Console.Write("Yolcu Yaşı: ");
+            //passengerAge = Console.ReadLine();
+
+            //Console.Write("Yolcu Tc Kimlik Numarası: ");
+            //passengerIdentityNumber = Console.ReadLine();
+
+            //Console.WriteLine();
+            //Console.WriteLine("---------------------------------");
+
+            //Console.WriteLine("Yolcu Kimlik Numarası: " + passengerIdentityNumber + " - Yolcu Ad Soyad: " + passengerName + " " + 
+            //    passengerSurname + " - Yolcu Yaş: " + passengerAge + " - Yolcu İlçe/İl: " + passengerDistrict + "/" + passengerCity);
+
             #endregion
 
         }
