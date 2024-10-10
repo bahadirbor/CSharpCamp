@@ -71,6 +71,10 @@ namespace _03_MakingDecision
             //}
             #endregion
 
+            #region SampleProject
+            Sample sample = new Sample();
+            #endregion
+
         }
     }
 }
