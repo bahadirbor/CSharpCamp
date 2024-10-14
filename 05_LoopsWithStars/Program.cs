@@ -58,6 +58,25 @@ namespace _05_LoopsWithStars
             //}
             #endregion
 
+            #region SamplePyramid
+            //int n = 5;
+
+            //for (int i = 1; i <= n; i++) { 
+            //    //spaces
+            //    for (int j = n-i; j>0; j--)
+            //    {
+            //        Console.Write(" ");
+            //    }
+
+            //    //stars
+            //    for (int k = 1; k <= 2 * i - 1; k++) { 
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+
+            //}
+            #endregion
+
         }
     }
 }
