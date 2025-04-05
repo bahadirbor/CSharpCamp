@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ATM
 {
-    internal class Users
+    public class Users
     {
         // Private variables
         private string Name;
