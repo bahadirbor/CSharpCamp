@@ -10,36 +10,58 @@ namespace ATM
     internal class Program{
 
         static void Main(string[] args){
+
+            Users user;
             
-            while (true){
-                Console.WriteLine("Welcome to the ATM!");
-                Console.Write("Press 1 for register/Press 2 for login:");
-                int choice = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Please enter your name:");
+            string name = Console.ReadLine();
+            Console.Write("Please enter your surname:");
+            string surname = Console.ReadLine();
+            Console.Write("Please enter your balance:");
+            int balance = Convert.ToInt32(Console.ReadLine());
 
-                if (choice == 1){
-                    Console.Write("Please enter your name:");
-                    string name = Console.ReadLine();
-                    Console.Write("Please enter your surname:");
-                    string surname = Console.ReadLine();
-                    Console.Write("Please enter your balance:");
-                    int balance = Convert.ToInt32(Console.ReadLine());
-
-                    Users user = new Users(name, surname, balance);
+            user = new Users(name, surname, balance);
                     
-                    Console.WriteLine("Registering...");
-                    Console.WriteLine($"User {user.getName()} {user.getSurname()} with balance {user.getBalance()} registered successfully.");
-                }
-                else if (choice == 2){
-                    Console.WriteLine("Logging in...");
+            Console.WriteLine("Registering...");
+            Console.WriteLine($"User {user.getName()} {user.getSurname()} with balance {user.getBalance()} registered successfully.");
+            Console.WriteLine("Logging in...");
+
+            int choose;
+            Console.WriteLine("1. Examine your bank account");
+            Console.WriteLine("2. Withdraw Money");
+            Console.WriteLine("3. Deposit Money");
+            Console.Write("Make your choice: ");
+            choose = Convert.ToInt32(Console.ReadLine());
+
+            switch (choose){
+                case 1:
+                    Console.WriteLine("Name - Surname: " + user.getName() + " " + user.getSurname());
+                    Console.WriteLine("Balance: " + user.getBalance());
+                    break;
+                case 2:
+                    Console.Write("How much money do you withdraw?: ");
+                    int withdraw = Convert.ToInt32(Console.ReadLine());
+                    if (withdraw > user.getBalance())
+                    {
+                        Console.WriteLine("You don't have enough money!");
+                    }
+                    else
+                    {
+                        user.setBalance(user.getBalance() - withdraw);
+                        Console.WriteLine("You have withdrawn " + withdraw + " successfully.");
+                        Console.WriteLine("Your new balance is: " + user.getBalance());
+                    }
+                    break;
+                case 3:
+                    Console.Write("How much money do you deposit?: ");
+                    int deposit = Convert.ToInt32(Console.ReadLine());
+                    user.setBalance(user.getBalance() + deposit);
+                    Console.WriteLine("Your new balance is: " + user.getBalance());
+                    break;
+                default:
+                    Console.WriteLine("You made wrong decision!");
                     break;
                 }
-                else{
-                    Console.WriteLine("Invalid choice. Please try again.");
-                }
-            }
-
-
-
         }
     }
 }
